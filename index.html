@@ -374,7 +374,7 @@
 
         <div class="sign-box">
           <b class="sign">Подпишитесь на рассылку</b>
-          <form class="mailing-form" name="mailing-form">
+          <form class="mailing-form" method="GET" name="mailing-form">
             <label class="mailing-title">
               <input  class="mailing-input" type="email" name="email" placeholder="E-mail">
             </label>
@@ -389,27 +389,49 @@
       
       </div>
     </footer>
-<!--Модальное окно is-hidden-->
-  <div class="backdrop "></div> data-modal>
+<!--Модальное окно -->
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <form class="request-form" name="request-form">
+      <form class="request-form" method="GET" name="request-form">
         <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
         <label class="form-field">
           <span class="form-label">Имя</span>
           <input class="form-input" type="text" name="name">
+          <svg width="18" height="18" class="icon">
+            <use href=./images/icons.svg#icon-name></use>
+          </svg>
         </label>
         <label  class="form-field">
           <span class="form-label">Телефон</span>
           <input class="form-input" type="tel" name="tel">
+          <svg width="18" height="18" class="icon">
+            <use href=./images/icons.svg#icon-tel></use>
+          </svg>
         </label>
         <label class="form-field">
           <span class="form-label">Почта</span>
           <input class="form-input" type="email" name="email">
+          <svg width="18" height="18" class="icon">
+            <use href=./images/icons.svg#icon-email></use>
+          </svg>
         </label>
         <label class="form-field">
           <span class="form-label">Комментарий</span>
           <textarea class="form-textarea" name="comment" placeholder="Введите текст"></textarea>
         </label>
+        <div class="agreement">
+          <label class="form-text">
+            <input class="checkbox" type="checkbox" name="checkbox">
+            <!-- <svg width="16" height="15" class="icon-checkbox">
+              <use href=./images/icons.svg#icon-checkbox></use>
+            </svg> -->
+            <svg width="16" height="15" class="icon-check">
+              <use href=./images/icons.svg#icon-check></use>
+            </svg>
+            Соглашаюсь с рассылкой и принимаю
+          </label>
+          <a class="form-link" href="">Условия договора</a>
+        </div>
         <div class="submit-box">
           <button class="btn-submit" type="submit">Отправить</button>
         </div>
