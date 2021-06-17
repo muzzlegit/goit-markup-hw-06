@@ -772,9 +772,6 @@ body {
 .address-link:focus {
   color: var(--accent-text-color);
 }
-.join-box {
-  margin-right: 93px;
-}
 .join {
   margin-top: 0;
   margin-bottom: 20px;
@@ -821,6 +818,9 @@ body {
 .mailing-title {
   display: inline-block;
   margin-right: 12px;
+}
+.sign-box {
+  margin-left: auto;
 }
 .sign {
   display: inline-block;
